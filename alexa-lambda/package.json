@@ -1,0 +1,9 @@
+{
+  "name": "bowling-schedule-alexa",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "alexa-sdk": "^1.0.25",
+    "aws-sdk": "^2.315.0"
+  }
+}
