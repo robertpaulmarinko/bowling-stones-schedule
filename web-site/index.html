@@ -15,7 +15,7 @@
             height: 24px;
         }
 
-        .is-bowling-checkbox input[type="checkbox"]:checked + label {
+        .is-bowling-checkbox input[type="checkbox"]:checked+label {
             background: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNiwwQzExLjY2NCwwLDAsMTEuNjYzLDAsMjZzMTEuNjY0LDI2LDI2LDI2czI2LTExLjY2MywyNi0yNlM0MC4zMzYsMCwyNiwweiBNMjYsNTBDMTIuNzY3LDUwLDIsMzkuMjMzLDIsMjYgICBTMTIuNzY3LDIsMjYsMnMyNCwxMC43NjcsMjQsMjRTMzkuMjMzLDUwLDI2LDUweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTM1LjcwNywxNi4yOTNjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBMMjYsMjQuNTg2bC04LjI5My04LjI5M2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMCAgIHMtMC4zOTEsMS4wMjMsMCwxLjQxNEwyNC41ODYsMjZsLTguMjkzLDguMjkzYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzE2LjQ4OCwzNS45MDIsMTYuNzQ0LDM2LDE3LDM2ICAgczAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzTDI2LDI3LjQxNGw4LjI5Myw4LjI5M0MzNC40ODgsMzUuOTAyLDM0Ljc0NCwzNiwzNSwzNnMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5MyAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDI3LjQxNCwyNmw4LjI5My04LjI5M0MzNi4wOTgsMTcuMzE2LDM2LjA5OCwxNi42ODQsMzUuNzA3LDE2LjI5M3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K") no-repeat;
             width: 24px;
             height: 24px;
@@ -26,8 +26,76 @@
 <body>
     <div class="container">
         <h1>Bowling Stones Schedule</h1>
-        <div class="bowling-ball"></div>
-        <div id="schedule"></div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#schedule-tab" role="tab"
+                    aria-controls="home" aria-selected="true">Schedule</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#contacts-tab" role="tab" aria-controls="profile"
+                    aria-selected="false">Contacts</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="schedule-tab" role="tabpanel" aria-labelledby="home-tab">
+                <div id="schedule"></div>
+            </div>
+            <div class="tab-pane fade" id="contacts-tab" role="tabpanel" aria-labelledby="profile-tab">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tom</td>
+                            <td><a href="tel:+12163750202">216-375-0202</a></td>
+                            <td><a href="mailto:tsquared7263@aol.com">tsquared7263@aol.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Rob Gates</td>
+                            <td><a href="tel:+14405914647">440-591-4647</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Bob Wagner</td>
+                            <td><a href="tel:+14404777648">440-477-7648</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Mike</td>
+                            <td><a href="tel:+14404778419">440-477-8419</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Ken</td>
+                            <td><a href="tel:+14405253513">440-525-3513</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Lee</td>
+                            <td><a href="tel:+14408218615">440-821-8615</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Dr Rob</td>
+                            <td><a href="tel:+14405679025">440-567-9025</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Bob Marinko</td>
+                            <td><a href="tel:+14405679025">440-567-9025</a></td>
+                            <td><a href="mailto:robertpaulmarinko@yahoo.com">robertpaulmarinko@yahoo.com</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
     <script src="./app.js?v=16" lang="javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
