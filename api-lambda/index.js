@@ -34,7 +34,7 @@ exports.handler = (event, context, callback) => {
 };
 
 const BUCKET = "bowling-schedule";
-const KEY = "schedule-2018.json";
+const KEY = "schedule-2019.json";
 
 function getSchedule(done) {
     var params = {
